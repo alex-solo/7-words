@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seven Random Words</title>
+  <link rel="stylesheet" href="/stylesheets/7_words.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    
+  </header>
+  <main>
+    <form action="/word_list" method="post">
+      <fieldset>
+        <p>Teach me some</p>
+        
+        <div class="select-style">
+          <select name="language" id="language">
+            <option value="default" selected disabled>Language</option>
+            <option value="dutch">Dutch</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+            <option value="portuguese">Portuguese(BR)</option>
+            <option value="russian">Russian</option>
+            <option value="spanish">Spanish</option>
+          </select>
+        </div>
+        <span>words!</span>
+        <input type="submit" value="Generate List" class="button">
+      </fieldset>
+    </form>
+
+    <% if session[:error] %>
+      <div class="flash error">
+        <p><%= session.delete(:error) %></p>
+      </div>
+    <% end %>
+  </main>
+
+  <aside>
+    
+  </aside>
+</body>
+</html>

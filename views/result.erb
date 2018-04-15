@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seven Random Words</title>
+  <link rel="stylesheet" href="/stylesheets/words.css">
+  <link rel="stylesheet" href="/stylesheets/results.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+  
+  </header>
+  <main>
+    <h1>Here are some <%= @language.capitalize %> words:</h1>
+    <ul>
+      <% @words_hash.each do |word, wrd_hsh| %>
+        <li>
+          <div class="word"><%= word %></div><!--
+          --><div class="translation"><%= wrd_hsh[:translated] %></div><!--
+          --><div class="sound">
+            <% if wrd_hsh[:sound].empty? %>
+              <p>No sound available<p>
+            <% else %>
+              <script type="text/javascript" src="<%= wrd_hsh[:sound] %>"></script>
+            <% end %>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+
+    <form action="/result" method="get">
+      <input type="submit" value="Go again" class="button">
+    </form><!--
+    --><a href="/" class="button">Home</a>
+
+  </main>
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+@import url("css_reset.css");
+@import url("7_words.css");
+
+body, html {
+  font: 1.5vw 'Rubik', Helvetica, Arial, sans-serif;
+  color: #333333;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+}
+
+h1 {
+  font: 2.5vw 'Rubik', Helvetica, Arial, sans-serif;
+}
+
+p {
+  font: 0.8rem 'Rubik', Helvetica, Arial, sans-serif;
+}
+
+ul {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+main {  
+  margin-left: 30%;
+  padding: 50px 2% 0 2%;
+}
+
+li {
+  padding: 4px 0;
+  border-top: 1px solid #cecece;
+}
+
+li:first-of-type {
+  border-top: none;
+}
+
+form {
+  display: inline-block;
+  width: 45%;
+  margin: 0;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 3%;
+}
+
+.button {
+  margin: 0;
+  margin-left: 5%;
+  display: inline-block;
+  width: 45%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  font: 2vw 'Rubik', Helvetica, Arial, sans-serif;
+  border: none;
+  text-decoration: none;
+}
