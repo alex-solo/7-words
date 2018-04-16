@@ -69,6 +69,7 @@ select#language {
 input[type="submit"] {
   display: block;
   width: 100%;
+  background-color: white;
   margin-top: 10%;
   box-sizing: border-box;
   padding: 10px;

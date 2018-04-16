@@ -7,10 +7,6 @@ body, html {
   height: 100%;
 }
 
-header {
-  position: fixed;
-}
-
 h1 {
   font: 2.5vw 'Rubik', Helvetica, Arial, sans-serif;
 }
@@ -25,7 +21,7 @@ ul {
 }
 
 main {  
-  margin-left: 30%;
+  margin-left: 5%;
   padding: 50px 2% 0 2%;
 }
 
